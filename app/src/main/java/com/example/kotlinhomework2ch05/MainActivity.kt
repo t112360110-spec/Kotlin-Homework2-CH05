@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         // 取得 ViewPager2 元件
         val viewPager2 = findViewById<ViewPager2>(R.id.viewPager2)
         // 建立 ViewPagerAdapter 並設定給 ViewPager2
-        val adapter = ViewPagerAdapter(supportFragmentManager, this.lifecycle)
+        val adapter = ViewPagerAdapter(this)
         viewPager2.adapter = adapter
         viewPager2.offscreenPageLimit = 1
     }
